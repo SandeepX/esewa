@@ -51,8 +51,8 @@
       <input value="{{$pdc}}" name="pdc" type="hidden">
       <input value="EPAYTEST" name="scd" type="hidden">
       <input value="{{$pid}}" name="pid" type="hidden">
-      <input value="http://127.0.0.1:8001/verification-payment?q=su" type="hidden" name="su">
-      <input value="http://127.0.0.1:8001/verification-payment?q=fu" type="hidden" name="fu">
+      <input value="{{$successUrl}}" type="hidden" name="su">
+      <input value="{{$failureUrl}}" type="hidden" name="fu">
       <button value="Submit" class="btn btn-success"  type="submit">pay with eSewa</button>
   </form>
 </div>
